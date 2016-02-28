@@ -8,7 +8,7 @@ Ordenado = False
 while (Ordenado == False):
     i = 0
     Ordenado = True
-    for elem in arreglo[0:len(arreglo)-1]:
+    for elem in arreglo[:len(arreglo)-1]:
         if (elem > arreglo[i+1]):
             Ordenado = False
             aux = arreglo[i+1]

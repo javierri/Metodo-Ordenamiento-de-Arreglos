@@ -3,6 +3,7 @@
 # Autor: Javier Rivera (UNEFA Mérida)
 
 arreglo = [2,4,1,7,5,3,8,9,6]
+print arreglo
 
 Ordenado = False
 while (Ordenado == False):

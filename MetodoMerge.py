@@ -30,20 +30,16 @@ def Mezclar (a,b):
 
 # Funcion ordenar por el metodo Merge (Mezcla)
 def OrdMerge (a):
-    pi = 0
     pf = len(a)-1
     
     if (pf == 0):
         return a
     
-    pm = (pi + pf)/2
-    a1 = OrdMerge (a[pi:pm+1])
+    pm = pf/2
+    a1 = OrdMerge (a[:pm+1])
     a2 = OrdMerge (a[pm+1:pf+1])
-    a = Mezclar (a1,a2)
-    
-    return a
-    
-    
+    return  Mezclar (a1,a2)
+
 # PRINCIPAL
 
 a = [4,2,5,8,1,3,9,7,6,12,0] 

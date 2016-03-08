@@ -3,18 +3,14 @@
 # Ver en: http://www.codeskulptor.org/#user41_7aRfnkPnjH_1.py
 # Autor: Javier Rivera (UNEFA Mérida)
 
+# Funcion para mezclar dos arreglos ordenados en uno solo
 def Mezclar (a,b):
 
-    la = len(a)
-    lb = len(b)
-    
-    i = 0
-    j = 0
+    la,lb = len(a),len(b)
+    i,j = 0,0
     c = []
-    #print a,b
     while (i < la and j < lb):
         
-        #print i,j
         if (a[i] < b[j]):
             c.append(a[i])
             i = i + 1
@@ -32,6 +28,7 @@ def Mezclar (a,b):
     
     return c
 
+# Funcion ordenar por el metodo Merge (Mezcla)
 def OrdMerge (a):
     pi = 0
     pf = len(a)-1

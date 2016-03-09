@@ -8,7 +8,7 @@ def ordenar(a):
     
     i = 0
     pivote = len(a)-1
-    while (i <= pivote):
+    while (i < pivote):
         if (a[i] > a[pivote]):
             elem = a[i]
             del a[i]

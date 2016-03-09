@@ -1,30 +1,32 @@
 # Metodo de Ordenamiento por Selección 
 # Observación: Pivote a la derecha
+# Ver en ... https://repl.it/BuVO
 # Autor: Javier Rivera (UNEFA Mérida)
 
-def ordenar(a):
-    if (len(a) <= 1):
-        return a
+def OrdQuickSort(arreglo):
+    
+    if (len(arreglo) <= 1):
+        return arreglo
     
     i = 0
-    pivote = len(a)-1
+    pivote = len(arreglo)-1
     while (i < pivote):
-        if (a[i] > a[pivote]):
-            elem = a[i]
-            del a[i]
-            a.append(elem)
+        if (arreglo[i] > arreglo[pivote]):
+            elem = arreglo[i]
+            del arreglo[i]
+            arreglo.append(elem)
             pivote = pivote-1
         else:
             i = i + 1
             
-    a1 = ordenar(a[0:pivote])
-    a2 = ordenar(a[pivote+1:len(a)])
+    a1 = OrdQuickSort(arreglo[0:pivote])
+    a2 = OrdQuickSort(arreglo[pivote+1:len(arreglo)])
     
-    return a1 + [a[pivote]] + a2
+    return a1 + [arreglo[pivote]] + a2
 
 # PRINCIPAL
 
-a = [4,6,2,8,3,5,1,7,9,5]
-print a
-a = ordenar(a)        
-print a
+arreglo = [4,6,2,8,3,5,1,7,9,5]
+print arreglo
+arreglo = OrdQuickSort(arreglo)        
+print arreglo

@@ -20,7 +20,7 @@ def OrdQuickSort(arreglo):
             i = i + 1
             
     a1 = OrdQuickSort(arreglo[0:pivote])
-    a2 = OrdQuickSort(arreglo[pivote+1:len(arreglo)])
+    a2 = OrdQuickSort(arreglo[pivote+1:])
     
     return a1 + [arreglo[pivote]] + a2
 

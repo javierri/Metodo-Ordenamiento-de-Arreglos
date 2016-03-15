@@ -1,3 +1,7 @@
+# Método de ordenamiento por inserción binaria 
+# Observación: ver en.. 
+# Autor: Javier Rivera (UNEFA Mérida)
+
 # Busqueda Binaria
 def buscar(arreglo, elem):
     

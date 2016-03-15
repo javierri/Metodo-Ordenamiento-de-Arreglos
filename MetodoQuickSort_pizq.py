@@ -7,7 +7,7 @@ def OrdQuickSort(arreglo):
   
 
 
-ef OrdQuickSort(arreglo):
+def OrdQuickSort(arreglo):
     
     if (len(arreglo) <= 1):
         return arreglo
@@ -28,12 +28,7 @@ ef OrdQuickSort(arreglo):
         
     return a1 + [arreglo[pivote]] + a2
           
-  # PRINCIPAL
-
-arreglo = [4,6,2,8,3,5,1,7,9,5]
-print arreglo
-arreglo = OrdQuickSort(arreglo)        
-print arreglo
+  
 
 # PRINCIPAL
 

@@ -1,7 +1,7 @@
 # Metodo de Ordenamiento por Selección 
 # Observación: Pivote a la Izquierda
 # Autores: Roentgen Pereira, Yorbelis Davila
-
+https://repl.it/Bvgl/14
 def OrdQuickSort(arreglo):
     #condicion de parada
     if (len(arreglo)<=1):

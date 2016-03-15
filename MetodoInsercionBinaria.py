@@ -25,14 +25,14 @@ def OrdBinario(arreglo):
     arregloOrd = []
     
     for i in range(len(arreglo)):
-        pos = buscar(arregloOrd, arreglo[i])
-        arregloOrd.insert(pos, arreglo[i])
+        pos = buscar(arregloOrd, arreglo[0])
+        arregloOrd.insert(pos, arreglo[0])
         del arreglo[0]
         
-    return arregloOrd
+    arreglo.extend(arregloOrd)
 
 # PRINCIPAL
     
 a = [6,4,1,9,2,8,3,5,7,12,0,11]
-a = OrdBinario(a)
+OrdBinario(a)
 print a

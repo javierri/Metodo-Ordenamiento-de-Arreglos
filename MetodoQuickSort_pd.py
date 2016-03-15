@@ -27,6 +27,6 @@ def OrdQuickSort(arreglo):
 # PRINCIPAL
 
 arreglo = [4,6,2,8,3,5,1,7,9,5]
-print arreglo
+print "Inicial", arreglo
 arreglo = OrdQuickSort(arreglo)        
-print arreglo
+print "Ordenado", arreglo

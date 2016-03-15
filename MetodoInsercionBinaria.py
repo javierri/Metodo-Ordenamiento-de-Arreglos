@@ -1,5 +1,5 @@
 # Método de ordenamiento por inserción binaria 
-# Observación: ver en.. 
+# Observación: ver en.. https://repl.it/BwYo
 # Autor: Javier Rivera (UNEFA Mérida)
 
 # Busqueda Binaria

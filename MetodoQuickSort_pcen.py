@@ -1,7 +1,7 @@
 # Metodo de Ordenamiento por Selección 
 # Observación: Pivote en el centro
-# Ver en ... https://repl.it/BwK2/2
-# Autor: Cruz ricardo, Nestor Peña, Vanessa Suarez, Alan Atencio (UNEFA Mérida)
+# ver en http://www.codeskulptor.org/#user41_ZJNxinlco4_13.py
+# Autor: Cruz ricardo, Nestor Peña (UNEFA Mérida)
 
 def OrdQuickSort(arreglo):
     
@@ -16,13 +16,12 @@ def OrdQuickSort(arreglo):
             del arreglo[i]
             arreglo.insert(pivote,elem)
             pivote = pivote-1
-#            print "Arreglo Izquiero ",arreglo
+# 			 print "Arreglo Izquiero ",arreglo
 #     borrar el # Para mostrar cada cambio Efectuado  
             
         else:
             i = i + 1
     
-    pivote = (len(arreglo))/2
     j=len(arreglo)-1
     while (j > pivote):
         if (arreglo[pivote] < arreglo[j]):
@@ -39,10 +38,10 @@ def OrdQuickSort(arreglo):
     a2 = OrdQuickSort(arreglo[pivote+1:])
     
     a= a1 + [arreglo[pivote]] + a2
-#    print "\n Arreglo por Orden ",a
+    print "\n Arreglo por Orden ",a
     return a
 # PRINCIPAl
 arreglo = [4,6,2,8,3,5,1,7,9,5]
-print "Arreglo Original sin Ordenar ",arreglo
-arreglo = OrdQuickSort(arreglo) 
+print arreglo
+arreglo = OrdQuickSort(arreglo)   
 print "\n Arreglo Final Ordenado ",arreglo

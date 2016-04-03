@@ -6,11 +6,6 @@
 #Gladys de Jesús Barrios Guedez 19240169
 # ver en repl.it en https://repl.it/BwKo/1
 
-
-
-
-
-
 def OrdQuickSort(arreglo):
     
     if (len(arreglo) <= 1):

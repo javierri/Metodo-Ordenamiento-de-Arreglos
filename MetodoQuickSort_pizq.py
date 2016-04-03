@@ -3,11 +3,6 @@
 # Autores: MARBELIS, WILLIAM, YASMELI
 
 def OrdQuickSort(arreglo):
-  pass
-  
-
-
-def OrdQuickSort(arreglo):
     
     if (len(arreglo) <= 1):
         return arreglo
@@ -28,8 +23,6 @@ def OrdQuickSort(arreglo):
         
     return a1 + [arreglo[pivote]] + a2
           
-  
-
 # PRINCIPAL
 
 arreglo = [4,6,2,8,3,5,1,7,9,5]

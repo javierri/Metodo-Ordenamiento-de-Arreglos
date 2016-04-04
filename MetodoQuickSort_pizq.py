@@ -1,6 +1,6 @@
 # Metodo de Ordenamiento por Selección 
 # Observación: Pivote a la Izquierda
-# Autores: MARBELIS, WILLIAM, YASMELI
+# Autores: 
 
 def OrdQuickSort(arreglo):
   pass

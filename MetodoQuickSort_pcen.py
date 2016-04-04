@@ -16,9 +16,7 @@ def OrdQuickSort(arreglo):
             del arreglo[i]
             arreglo.insert(pivote,elem)
             pivote = pivote-1
-#            print "Arreglo Izquiero ",arreglo
-#     borrar el # Para mostrar cada cambio Efectuado  
-            
+            #  print "Arreglo Izquiero ",arreglo
         else:
             i = i + 1
     
@@ -31,17 +29,17 @@ def OrdQuickSort(arreglo):
             del arreglo[j]
             arreglo.insert(pivote,elem)
             pivote = pivote+1
-#            print "Arreglo Derecho ",arreglo
-#     borrar el # Para mostrar cada cambio Efectuado  
-            
+            # print "Arreglo Derecho ",arreglo
+
     a1 = OrdQuickSort(arreglo[0:pivote])
     a2 = OrdQuickSort(arreglo[pivote+1:])
     
-    a= a1 + [arreglo[pivote]] + a2
-    print "\n Arreglo por Orden ",a
+    a = a1 + [arreglo[pivote]] + a2
+    # print "\n Arreglo por Orden ",a
     return a
+    
 # PRINCIPAl
 arreglo = [4,6,2,8,3,5,1,7,9,5]
-print "\n Arreglo Original "arreglo
+print "\n Arreglo Original ", arreglo
 arreglo = OrdQuickSort(arreglo)   
-print "\n Arreglo Final Ordenado ",arreglo
+print "\n Arreglo Final Ordenado ", arreglo
